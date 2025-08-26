@@ -44,11 +44,22 @@ for (const cardCallButton of cardCallButtons) {
   });
 }
 
+const copyButtons = document.getElementsByClassName("copy-btn");
+for (const copyButton of copyButtons) {
+  copyButton.addEventListener("click", () => {
+    const copyCount = document.getElementById("copy-count").innerText;
+    const count = Number(copyCount) + 1;
+    document.getElementById("copy-count").innerText = count;
+    const phnNumber = copyButton.parentNode.parentNode.children[3].innerText;
+    navigator.clipboard.writeText(phnNumber).then(() => {
+      alert("Copied: " + phnNumber);
+    });
+  });
+}
+
 const clear = document
   .getElementById("clear-btn")
   .addEventListener("click", () => {
     let history = document.getElementById("history-container");
     history.innerHTML = "";
   });
-
-  
