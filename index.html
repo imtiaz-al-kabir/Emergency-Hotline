@@ -43,13 +43,13 @@
         <div
           class="bg-[#41ff6b1a] flex gap-3 justify-center items-center w-30 rounded-3xl p-3"
         >
-          <span class="font-bold text-2xl">0</span>
+          <span class="font-bold text-2xl" id="nav-heart">0</span>
           <img src="./assets/heart.png" alt="heart" class="w-8" />
         </div>
         <div
           class="bg-[#41ff6b1a] flex gap-3 justify-center items-center w-30 rounded-3xl p-3"
         >
-          <span class="font-bold text-2xl">0</span>
+          <span class="font-bold text-2xl">100</span>
           <img src="./assets/coin.png" alt="heart" class="w-8" />
         </div>
         <div
@@ -87,7 +87,9 @@
                 <div class="bg-red-100 p-4 rounded-full">
                   <img src="./assets/emergency.png" alt="" class="w-8" />
                 </div>
-                <span><i class="fa-solid fa-heart text-3xl"></i></span>
+                <span class="card-heart"
+                  ><i class="fa-solid fa-heart text-3xl"></i
+                ></span>
               </div>
               <h1 class="font-bold text-2xl py-3">EHL</h1>
               <h2 class="font-bold text-xl">Emergency Helpline</h2>
@@ -112,7 +114,9 @@
                 <div class="bg-red-100 p-4 rounded-full">
                   <img src="./assets/police.png" alt="" class="w-8" />
                 </div>
-                <span><i class="fa-solid fa-heart text-3xl"></i></span>
+                <span class="card-heart"
+                  ><i class="fa-solid fa-heart text-3xl"></i
+                ></span>
               </div>
               <h1 class="font-bold text-2xl py-3">EHP</h1>
               <h2 class="font-bold text-xl">Emergency Helpline (Police)</h2>
@@ -137,7 +141,9 @@
                 <div class="bg-red-100 p-4 rounded-full">
                   <img src="./assets/fire-service.png" alt="" class="w-8" />
                 </div>
-                <span><i class="fa-solid fa-heart text-3xl"></i></span>
+                <span class="card-heart"
+                  ><i class="fa-solid fa-heart text-3xl"></i
+                ></span>
               </div>
               <h1 class="font-bold text-2xl py-3">FSH</h1>
               <h2 class="font-bold text-xl">Fire Service Hotline</h2>
@@ -162,7 +168,9 @@
                 <div class="bg-red-100 p-4 rounded-full">
                   <img src="./assets/ambulance.png" alt="" class="w-8" />
                 </div>
-                <span><i class="fa-solid fa-heart text-3xl"></i></span>
+                <span class="card-heart"
+                  ><i class="fa-solid fa-heart text-3xl"></i
+                ></span>
               </div>
               <h1 class="font-bold text-2xl py-3">Ambulance</h1>
               <h2 class="font-bold text-xl">Ambulance Hotline Number</h2>
@@ -187,7 +195,9 @@
                 <div class="bg-red-100 p-4 rounded-full">
                   <img src="./assets/emergency.png" alt="" class="w-8" />
                 </div>
-                <span><i class="fa-solid fa-heart text-3xl"></i></span>
+                <span class="card-heart"
+                  ><i class="fa-solid fa-heart text-3xl"></i
+                ></span>
               </div>
               <h1 class="font-bold text-2xl py-3">RAB</h1>
               <h2 class="font-bold text-xl">RAB HelpDesk</h2>
@@ -212,7 +222,9 @@
                 <div class="bg-red-100 p-4 rounded-full">
                   <img src="./assets/emergency.png" alt="" class="w-8" />
                 </div>
-                <span><i class="fa-solid fa-heart text-3xl"></i></span>
+                <span class="card-heart"
+                  ><i class="fa-solid fa-heart text-3xl"></i
+                ></span>
               </div>
               <h1 class="font-bold text-2xl py-3">Dudok</h1>
               <h2 class="font-bold text-xl">Dudok Helpline</h2>
@@ -237,7 +249,9 @@
                 <div class="bg-red-100 p-4 rounded-full">
                   <img src="./assets/emergency.png" alt="" class="w-8" />
                 </div>
-                <span><i class="fa-solid fa-heart text-3xl"></i></span>
+                <span class="card-heart"
+                  ><i class="fa-solid fa-heart text-3xl"></i
+                ></span>
               </div>
               <h1 class="font-bold text-2xl py-3">GLA</h1>
               <h2 class="font-bold text-xl">Government legal assistance</h2>
@@ -266,7 +280,9 @@
                     class="w-8"
                   />
                 </div>
-                <span><i class="fa-solid fa-heart text-3xl"></i></span>
+                <span class="card-heart"
+                  ><i class="fa-solid fa-heart text-3xl"></i
+                ></span>
               </div>
               <h1 class="font-bold text-2xl py-3">BD Railway</h1>
               <h2 class="font-bold text-xl">Bangladesh Railway</h2>
@@ -291,7 +307,9 @@
                 <div class="bg-red-100 p-4 rounded-full">
                   <img src="./assets/brac.png" alt="" class="w-8" />
                 </div>
-                <span><i class="fa-solid fa-heart text-3xl"></i></span>
+                <span class="card-heart"
+                  ><i class="fa-solid fa-heart text-3xl"></i
+                ></span>
               </div>
               <h1 class="font-bold text-2xl py-3">Brac</h1>
               <h2 class="font-bold text-xl">Brac</h2>
@@ -314,7 +332,29 @@
           </div>
         </section>
 
-        <aside class="col-span-3"></aside>
+        <aside class="col-span-3">
+          <div class="p-6 bg-white rounded-xl mt-8 h-full">
+            <div class="flex justify-between items-center">
+              <h1 class="font-bold">
+                <i class="fa-solid fa-clock"></i> Call History
+              </h1>
+              <button class="p-4 rounded-xl bg-[#00a63e] text-white">
+                Clear
+              </button>
+            </div>
+            <div id="history-container">
+              <div
+                class="flex justify-between items-center bg-[#fafafa] rounded-lg p-4 mt-4"
+              >
+                <div>
+                  <h1 class="font-bold">Fire Service</h1>
+                  <p class="font-semibold">999</p>
+                </div>
+                <div>10.0.12</div>
+              </div>
+            </div>
+          </div>
+        </aside>
       </section>
     </main>
 
