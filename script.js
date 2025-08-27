@@ -40,7 +40,7 @@ for (const cardCallButton of cardCallButtons) {
 
       history.append(newDiv);
     } else {
-      alert(` You Dont Have Enought points to Call`);
+      alert(` ❌ You Dont Have Enought points to Call`);
     }
   });
 }
