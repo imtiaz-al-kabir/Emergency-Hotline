@@ -15,11 +15,12 @@ for (const cardCallButton of cardCallButtons) {
     const subTitle = cardCallButton.parentNode.parentNode.children[2].innerText;
     const phnNumber =
       cardCallButton.parentNode.parentNode.children[3].innerText;
-
+    const callLogo = cardCallButton.children[0].innerHTML;
+    console.log(callLogo);
     let pointCount = document.getElementById("points-count").innerText;
     let newPoints = Number(pointCount) - 20;
     if (pointCount >= 20) {
-      alert(`Calling ${subTitle} ${phnNumber}....`);
+      alert(`📞 Calling ${subTitle} ${phnNumber} ....`);
       document.getElementById("points-count").innerText = newPoints;
       let date = new Date().toLocaleTimeString();
       const history = document.getElementById("history-container");
