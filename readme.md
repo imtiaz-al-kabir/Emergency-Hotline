@@ -9,12 +9,12 @@ querySelectorAll=This will gives us multiple element from multiple element which
 2. How do you **create and insert a new element into the DOM**?
 
 first: create element using document.createElement("")
-second: select the element where i want to put this
-third: put this using append() method
+second: select the element (using DOM selector) where i want to put this,
+third: put this using append() method.
 
 3. What is **Event Bubbling** and how does it work?
 
-event bubbling means when event occurs in child this will automatically going up their parents and parents going up their parents and so on.at the end this will go to the root
+event bubbling means when event occurs in child this will automatically going up their parents and parents going up their parents and so on.at the end this will go to their root
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
    Event Delegation means delegate the event on parent so that i can access all the child. if i want to access all child i have to add event listener for all child..but if i delegate the event on parent i can access all the child without using loop.its very useful because it is way more faster
