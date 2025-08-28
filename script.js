@@ -15,7 +15,6 @@ for (const cardCallButton of cardCallButtons) {
     const phnNumber =
       cardCallButton.parentNode.parentNode.children[3].innerText;
     const callLogo = cardCallButton.children[0].innerHTML;
-    console.log(callLogo);
     let pointCount = document.getElementById("points-count").innerText;
     let newPoints = Number(pointCount) - 20;
     if (pointCount >= 20) {
